@@ -1,0 +1,7 @@
+{
+	"OS" : "linux",
+	"name" : "Sine",
+	"liser" : "./src/liser.js",
+	"anser" : "./src/anser.js",
+	"asker" : "./src/asker.js"
+}

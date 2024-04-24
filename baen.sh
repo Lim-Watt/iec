@@ -1,0 +1,1 @@
+node --no-warnings=ExperimentalWarning ./src/liser.js
