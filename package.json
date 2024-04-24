@@ -2,8 +2,12 @@
 	"type": "module",
 	"name": "iec",
 	"version": "1.0.0",
-	"author": "Sin Watt",
+	"author": "Lim Watt",
 	"license": "MIT",
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/Lim-Watt/iec/"
+	},
 	"dependencies": {
 		"blessed": "^0.1.81",
 		"ws": "^8.16.0"
