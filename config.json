@@ -1,6 +1,6 @@
 {
 	"OS" : "linux",
-	"name" : "Sine",
+	"name" : "Sin Watt",
 	"liser" : "./src/liser.js",
 	"anser" : "./src/anser.js",
 	"asker" : "./src/asker.js"
