@@ -1,1 +1,2 @@
-node --no-warnings=ExperimentalWarning ./src/asker.js $2
+node --no-warnings=ExperimentalWarning ./src/asker.js $1
+
