@@ -28,7 +28,7 @@ wss.on('connection', async function(ws) {
 	}
 	else if (OS == "win")
 	{
-		exec(`cmd /K start node --no-warnings=ExperimentalWarning ${anser} ${port - cnt}`, (err) => { });
+		exec(`start cmd /c node --no-warnings=ExperimentalWarning ${anser} ${port - cnt}`, (err) => { });
 	}
 	else
 	{
