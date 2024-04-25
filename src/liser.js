@@ -14,7 +14,9 @@ let cnt = 0;
 const anser = data.anser;
 const OS = data.OS;
 
-wss.on('connection', ws => {
+const sleep = (delay) => new Promise((resolve) => setTimeout(resolve, delay))
+
+wss.on('connection', async function(ws) {
 	
 	console.log("[link] 连接申请");
 	
@@ -23,19 +25,17 @@ wss.on('connection', ws => {
 	if (OS == "linux")
 	{
 		execSync(`gnome-terminal -- node --no-warnings=ExperimentalWarning ${anser} ${port - cnt}`, (err) => { });
-		
-		execSync(`sleep 1s`, (err) => { });
 	}
 	else if (OS == "win")
 	{
 		execSync(`cmd /K start node --no-warnings=ExperimentalWarning ${anser} ${port - cnt}`, (err) => { });
-		
-		execSync(`timeout /T 1 /NOBREAK`, (err) => { });
 	}
 	else
 	{
 		throw new Error('OS should be "linux" or "win"');
 	}
+	
+	await sleep(1000);
 	
 	ws.send(port - cnt);
 });
