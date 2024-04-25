@@ -47,8 +47,6 @@
     <li><a href="#路线图">路线图</a></li>
     <li><a href="#贡献">贡献</a></li>
     <li><a href="#许可证">许可证</a></li>
-    <li><a href="#联系我们">联系我们</a></li>
-    <li><a href="#致谢">致谢</a></li>
   </ol>
 </details>
 
