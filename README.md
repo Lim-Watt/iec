@@ -95,9 +95,10 @@
 ## 路线图
 
 - [ ] 扩展生态
-      - [ ] Mac
-      - [ ] VsCode 插件
-      - [ ] linux 其他发行版
+  - [x] windows
+  - [ ] Mac
+  - [ ] VsCode 插件
+  - [ ] linux 其他发行版
 
 到 [open issues](https://github.com/Lim-Watt/iec/issues) 页查看所有请求的功能 （以及已知的问题）。
 
