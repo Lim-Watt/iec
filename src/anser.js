@@ -1,3 +1,11 @@
+/*///////////////////////////////////
+ *
+ * anser.js
+ * 
+ * 用分配的端口搭建ws，并与连接上的 asker.js 交互
+ * 
+/*///////////////////////////////////
+
 import { createRequire } from 'module';
 const require = createRequire(import.meta.url);
 
@@ -18,6 +26,7 @@ wss.on('connection', function connection(socket, req) {
 	
 	if (flag)
 	{
+		// 不知道有没有用
 		throw new Error('另一个人在尝试连接！应急掐断会话。');
 	}
 	flag = true;

@@ -1,11 +1,38 @@
+/*///////////////////////////////////
+ * 
+ * asker.js
+ * 
+ * 发送申请并交互
+ * 
+ * 运行过程
+ * * 
+ * * 连接对方 liser.js
+ * * 
+ * * 接受端口号
+ * * 
+ * * 建立交互界面
+ * * 
+ * * 连接对方 anser.js 交互器
+ * * 
+ * * 交互
+ * * * 
+ * * * 接受到对方消息，显示
+ * * * 监听回车，发送消息，显示，清空输入框
+ * * * 
+ * * 
+ * 
+/*///////////////////////////////////
+
 import { createRequire } from 'module';
 const require = createRequire(import.meta.url);
 
 import data from "../config.json" with { type : 'json' }
 const WebSocket = require('ws');
 
+// 交互界面依赖
 const blessed = require('blessed');
 
+// 对方 IP，传参
 const ip = process.argv[2];
 const ask = new WebSocket(`ws://${ip}:19198`);
 const myname = data.name;

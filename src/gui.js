@@ -1,3 +1,11 @@
+/**
+ * 
+ * gui.js
+ * 
+ * 纯交互界面脚本
+ * 
+ */
+
 const blessed = require('blessed');
 
 // 创建一个 blessed screen 对象
