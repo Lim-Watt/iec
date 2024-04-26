@@ -124,7 +124,7 @@
 
 ## 许可证
 
-根据 MIT 许可证分发。打开 [LICENSE.txt](LICENSE.txt) 查看更多内容。
+根据 MIT 许可证分发。打开 [LICENSE](LICENSE) 查看更多内容。
 
 [contributors-shield]: https://img.shields.io/github/contributors/Lim-Watt/iec.svg?style=for-the-badge
 [contributors-url]: https://github.com/Lim-Watt/iec/graphs/contributors
